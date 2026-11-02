@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+---
+# vars file for execution_checker
+
+target_file_path: "/home/ubuntu/output.txt"
+file_owner: "ubuntu"
+file_group: "ubuntu"

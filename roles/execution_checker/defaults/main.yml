@@ -1,0 +1,5 @@
+#SPDX-License-Identifier: MIT-0
+---
+# defaults file for execution_checker
+
+execution_status_message: "successfully executed"

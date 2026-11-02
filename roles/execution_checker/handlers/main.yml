@@ -1,0 +1,7 @@
+#SPDX-License-Identifier: MIT-0
+---
+# handlers file for execution_checker
+
+- name: Notify Execution Complete
+  debug:
+    msg: "Handler Alert: /home/ubuntu/output.txt was successfully updated and verified!"

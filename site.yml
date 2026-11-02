@@ -1,0 +1,6 @@
+---
+- name: Run Execution Checker Role
+  hosts: webservers
+  become: yes
+  roles:
+    - execution_checker

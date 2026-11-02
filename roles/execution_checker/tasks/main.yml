@@ -1,0 +1,21 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for execution_checker
+
+- name: Copy static banner file (Demonstrating 'files/' folder)
+  copy:
+    src: banner.txt
+    dest: "/home/ubuntu/banner.txt"
+    owner: "{{ file_owner }}"
+    group: "{{ file_group }}"
+    mode: '0644'
+
+
+- name: Generate output.txt using template, defaults, and vars (Demonstrating 'templates/', 'defaults/', 'vars/')
+  template:
+    src: output.j2
+    dest: "{{ target_file_path }}"
+    owner: "{{ file_owner }}"
+    group: "{{ file_group }}"
+    mode: '0644'
+  notify: Notify Execution Complete
